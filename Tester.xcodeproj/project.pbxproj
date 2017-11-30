@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		934242721FCF3CF800183D03 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934242711FCF3CEE00183D03 /* AudioToolbox.framework */; };
+		934242731FCF3CFD00183D03 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934242701FCF3CE400183D03 /* CoreAudio.framework */; };
+		934242751FCF3D0F00183D03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934242741FCF3D0A00183D03 /* AVFoundation.framework */; };
+		934242771FCF3D2400183D03 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934242761FCF3D1C00183D03 /* CoreAudioKit.framework */; };
 		93900AB81FCDF3D6000A917B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93900AB71FCDF3D6000A917B /* AppDelegate.swift */; };
 		93900ABA1FCDF3D6000A917B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93900AB91FCDF3D6000A917B /* ViewController.swift */; };
 		93900ABC1FCDF3D6000A917B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93900ABB1FCDF3D6000A917B /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		934242701FCF3CE400183D03 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		934242711FCF3CEE00183D03 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		934242741FCF3D0A00183D03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		934242761FCF3D1C00183D03 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		93900AB41FCDF3D6000A917B /* Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93900AB71FCDF3D6000A917B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93900AB91FCDF3D6000A917B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934242771FCF3D2400183D03 /* CoreAudioKit.framework in Frameworks */,
+				934242751FCF3D0F00183D03 /* AVFoundation.framework in Frameworks */,
+				934242731FCF3CFD00183D03 /* CoreAudio.framework in Frameworks */,
+				934242721FCF3CF800183D03 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +85,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9342426F1FCF3CE300183D03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				934242761FCF3D1C00183D03 /* CoreAudioKit.framework */,
+				934242741FCF3D0A00183D03 /* AVFoundation.framework */,
+				934242711FCF3CEE00183D03 /* AudioToolbox.framework */,
+				934242701FCF3CE400183D03 /* CoreAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93900AAB1FCDF3D5000A917B = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +103,7 @@
 				93900AC91FCDF3D8000A917B /* TesterTests */,
 				93900AD41FCDF3D8000A917B /* TesterUITests */,
 				93900AB51FCDF3D6000A917B /* Products */,
+				9342426F1FCF3CE300183D03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

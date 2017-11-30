@@ -8,20 +8,25 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
-
+class ViewController: NSViewController, NSTextFieldDelegate {
+  
+    @IBOutlet weak var melodyLabel: NSTextField!
+    var melody = [Int]();
+    @IBOutlet weak var melodyTextField: NSTextField!
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.viewDidLoad();
+        melodyTextField.delegate = self;
     }
-
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
-
-
+    override func controlTextDidEndEditing(_ obj: Notification) {
+        melodyLabel.stringValue = melodyTextField.stringValue;
+        melodyTextField.stringValue = "";
+    }
+    @IBAction func recordButton(_ sender: Any) {
+    }
 }
 
