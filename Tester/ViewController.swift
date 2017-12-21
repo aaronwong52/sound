@@ -9,24 +9,40 @@
 import Cocoa
 
 class ViewController: NSViewController, NSTextFieldDelegate {
-  
+    
     @IBOutlet weak var melodyLabel: NSTextField!
-    var melody = [Int]();
     @IBOutlet weak var melodyTextField: NSTextField!
+    @IBOutlet weak var nameTextField: NSTextField!
+    
+    var melodyController = Melodies();
     override func viewDidLoad() {
         super.viewDidLoad();
         melodyTextField.delegate = self;
+        nameTextField.delegate = self;
     }
     override var representedObject: Any? {
         didSet {
             // Update the view, if already loaded.
         }
     }
-    override func controlTextDidEndEditing(_ obj: Notification) {
-        melodyLabel.stringValue = melodyTextField.stringValue;
-        melodyTextField.stringValue = "";
+    
+    // FIGURE OUT SEGUES
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        print("Segue time");
+        if let NoteButtons = segue.destinationController as? noteButtons {
+            NoteButtons.melodyController = melodyController;
+            print("passed over");
+        }
     }
-    @IBAction func recordButton(_ sender: Any) {
+    @IBAction func saveButton(_ sender: Any) {
+        let newMelody = Melodies.Melody(name: nameTextField.stringValue, melody: melodyTextField.stringValue);
+        melodyController.melodies.append(newMelody);
+        resetTextFields();
+        print(melodyController.melodies.count);
+    }
+    private func resetTextFields() {
+        nameTextField.stringValue = "";
+        melodyTextField.stringValue = "";
     }
 }
 

@@ -17,6 +17,9 @@
 		93900ABF1FCDF3D7000A917B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93900ABD1FCDF3D7000A917B /* Main.storyboard */; };
 		93900ACB1FCDF3D8000A917B /* TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93900ACA1FCDF3D8000A917B /* TesterTests.swift */; };
 		93900AD61FCDF3D8000A917B /* TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93900AD51FCDF3D8000A917B /* TesterUITests.swift */; };
+		93C2D5721FE9D0E20091977F /* Melodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2D5711FE9D0E20091977F /* Melodies.swift */; };
+		93DFDD921FD08540007BD8B7 /* noteButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFDD901FD08540007BD8B7 /* noteButtons.swift */; };
+		93DFDD931FD08540007BD8B7 /* noteButtons.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DFDD911FD08540007BD8B7 /* noteButtons.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		93900AD11FCDF3D8000A917B /* TesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93900AD51FCDF3D8000A917B /* TesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterUITests.swift; sourceTree = "<group>"; };
 		93900AD71FCDF3D8000A917B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C2D5711FE9D0E20091977F /* Melodies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Melodies.swift; sourceTree = "<group>"; };
+		93DFDD901FD08540007BD8B7 /* noteButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteButtons.swift; sourceTree = "<group>"; };
+		93DFDD911FD08540007BD8B7 /* noteButtons.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = noteButtons.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,9 @@
 			children = (
 				93900AB71FCDF3D6000A917B /* AppDelegate.swift */,
 				93900AB91FCDF3D6000A917B /* ViewController.swift */,
+				93DFDD901FD08540007BD8B7 /* noteButtons.swift */,
+				93DFDD911FD08540007BD8B7 /* noteButtons.xib */,
+				93C2D5711FE9D0E20091977F /* Melodies.swift */,
 				93900ABB1FCDF3D6000A917B /* Assets.xcassets */,
 				93900ABD1FCDF3D7000A917B /* Main.storyboard */,
 				93900AC01FCDF3D7000A917B /* Info.plist */,
@@ -255,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DFDD931FD08540007BD8B7 /* noteButtons.xib in Resources */,
 				93900ABC1FCDF3D6000A917B /* Assets.xcassets in Resources */,
 				93900ABF1FCDF3D7000A917B /* Main.storyboard in Resources */,
 			);
@@ -282,7 +292,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93900ABA1FCDF3D6000A917B /* ViewController.swift in Sources */,
+				93DFDD921FD08540007BD8B7 /* noteButtons.swift in Sources */,
 				93900AB81FCDF3D6000A917B /* AppDelegate.swift in Sources */,
+				93C2D5721FE9D0E20091977F /* Melodies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

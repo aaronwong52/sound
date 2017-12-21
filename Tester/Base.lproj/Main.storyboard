@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="qay-96-Vtu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -699,29 +699,18 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="232"/>
         </scene>
-        <!--View Controller-->
+        <!--New-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Tester" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="New" id="XfG-lQ-9wD" customClass="ViewController" customModule="Tester" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbj-Pa-ECa">
-                                <rect key="frame" x="198" y="101" width="83" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Record" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="K35-qv-vgl">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="recordButton:" target="XfG-lQ-9wD" id="gmB-5a-NJP"/>
-                                </connections>
-                            </button>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Rq-0Q-ALC">
-                                <rect key="frame" x="192" y="204" width="96" height="22"/>
+                                <rect key="frame" x="300" y="177" width="96" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8rP-qH-rlE">
                                     <font key="font" metaFont="system"/>
@@ -739,7 +728,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOZ-ia-j1k">
-                                <rect key="frame" x="214" y="240" width="49" height="17"/>
+                                <rect key="frame" x="324" y="207" width="49" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Melody" id="Csy-3L-1vR">
                                     <font key="font" metaFont="system"/>
@@ -747,16 +736,91 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lg-pw-bhC">
+                                <rect key="frame" x="115" y="207" width="40" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Name" id="DcD-mn-AaW">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wye-be-MTB">
+                                <rect key="frame" x="87" y="177" width="96" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="wwn-ku-PdJ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7H-xp-sb6">
+                                <rect key="frame" x="205" y="75" width="70" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c64-j1-WyM">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveButton:" target="XfG-lQ-9wD" id="Mqy-Xq-kfO"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="melodyLabel" destination="Kj0-z3-8Hk" id="Gh3-wQ-vGq"/>
                         <outlet property="melodyTextField" destination="9Rq-0Q-ALC" id="eVo-OQ-dKy"/>
+                        <outlet property="nameTextField" destination="wye-be-MTB" id="wIy-U7-nvS"/>
+                        <segue destination="bSJ-sV-mZh" kind="show" identifier="toSaved" id="dTb-31-tVi"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="41" y="1149"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="3oR-EH-4Gs">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" id="qay-96-Vtu" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem id="iOU-Cd-lVd"/>
+                        <tabViewItem id="0H5-De-xaS"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="dJz-Da-SyU">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <tabViewItems/>
+                        <connections>
+                            <outlet property="delegate" destination="qay-96-Vtu" id="63J-2N-9s1"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="dJz-Da-SyU" id="aWp-fo-fjI"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="tabItems" id="rOI-Vk-lQr"/>
+                        <segue destination="bSJ-sV-mZh" kind="relationship" relationship="tabItems" id="Voj-bB-Nxq"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="uKh-xc-dkn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="623"/>
+        </scene>
+        <!--Saved-->
+        <scene sceneID="j3g-Bh-9eI">
+            <objects>
+                <viewController title="Saved" id="bSJ-sV-mZh" customClass="noteButtons" customModule="Tester" sceneMemberID="viewController">
+                    <view key="view" id="YM9-du-BIo">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="GZZ-Mh-ZF8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="1149"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dTb-31-tVi"/>
+        <segue reference="rOI-Vk-lQr"/>
+    </inferredMetricsTieBreakers>
 </document>
